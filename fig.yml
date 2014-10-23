@@ -1,0 +1,8 @@
+db:
+  image: postgres
+  environment:
+    PGDATA: /tmp
+py:
+  build: py
+  links:
+    - db:db
